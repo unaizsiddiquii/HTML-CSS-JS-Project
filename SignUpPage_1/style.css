@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    font-size: 1.3rem;
+}
+
+.outer-box {
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(to top left, #3ed8ff, #a8f5ff);
+}
+
+.inner-box {
+    width: 400px;
+    margin: 0 auto;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 60px 40px;
+    background: linear-gradient(to top right, #ffffff58, #3498db47);
+    border-radius: 8px;
+    backdrop-filter: blur(8px);
+    box-shadow: 2px 2px 5px #1c6291;
+}
+
+.signup-header h1 {
+    font-size: 2.5rem;
+    margin: 12px 0px;
+    color: #212121;
+
+}
+
+.signup-header p {
+    font-size: 0.6 rem;
+    margin: 3px 0;
+    color: #636363;
+}
+
+.signup-body {
+    margin: 20px 0;
+
+}
+
+.singup-body p {
+    margin: 10px 0;
+}
+
+.signup-body p label {
+    display: block;
+    font-weight: bold;
+}
+
+.signup-body p input {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #cccc;
+    border-radius: 4x;
+    margin: 3px;
+
+}
+
+.signup-body p input[type="submit"] {
+    background-color: #3498db;
+    border: none;
+    cursor: pointer;
+    color: white;
+
+}
+
+.signup-body p input[type="submit"]:hover {
+    background-color: #1c6291;
+}
+
+.signup-footer p {
+    color: #555;
+    text-align: center;
+    font-size: small;
+
+}
+
+.signup-footer p a {
+    color: #3498db;
+    text-transform: uppercase;
+    text-decoration: none;
+
+
+}
+
+.circle {
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+    background: linear-gradient(to top right, #ffffff1d, #ffffff8b);
+    position: absolute;
+}
+
+.c1 {
+    top: 30vh;
+    left: 20vw
+}
+
+.c2 {
+    top: 58vh;
+    right: 20vw;
+}
+
+.c3 {
+    width: 300px;
+    height: 300px;
+    border-radius: 150px;
+    top: -5vh;
+    right: -3vw;
+}
+
+.circle:hover {
+    background: linear-gradient(to top right, #ffffff4b, #ffffffcd);
+
+
+}
+
+.inner-box:hover {
+    background: linear-gradient(to top right, #ffffff9c, #3498db51);
+    box-shadow: 4px 4px 7px #1c6291;
+}
