@@ -79,8 +79,7 @@ button:hover {
   width: 100%;
 }
 
-@media (max-width: 460px)
-{
+@media (max-width: 460px) {
   .textarea_container {
     grid-column: 1 / span 1;
   }
