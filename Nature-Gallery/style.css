@@ -1,0 +1,63 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  animation: gallery 20s linear infinite;
+  background-size: cover;
+  backdrop-filter: blur(5px);
+}
+.container {
+  display: flex;
+  height: 100vh;
+  background-color: #f83131;
+  background: transparent;
+  justify-content: center;
+  align-items: center;
+}
+.image-box {
+  width: 55vw;
+  height: 55vh;
+  border-radius: 35px;
+
+  box-shadow: rgba(0, 0, 0, 0.831) 0px 25px 50px -12px;
+  background-image: url("https://cdn.pixabay.com/photo/2023/12/08/10/20/winter-8437400_960_720.jpg");
+  background-size: cover;
+  animation: gallery 20s linear infinite;
+}
+@keyframes gallery {
+  0% {
+    background-image: url("https://cdn.pixabay.com/photo/2012/08/27/14/19/mountains-55067_1280.png");
+  }
+  10% {
+    background-image: url("https://cdn.pixabay.com/photo/2016/12/11/12/02/mountains-1899264_1280.jpg");
+  }
+  20% {
+    background-image: url("https://cdn.pixabay.com/photo/2019/11/01/11/08/landscape-4593909_1280.jpg");
+  }
+  30% {
+    background-image: url("https://cdn.pixabay.com/photo/2021/11/11/14/37/lake-6786472_1280.jpg");
+  }
+  40% {
+    background-image: url("https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_1280.jpg");
+  }
+  50% {
+    background-image: url("https://cdn.pixabay.com/photo/2023/09/03/18/01/lake-8231248_1280.jpg");
+  }
+  60% {
+    background-image: url("https://cdn.pixabay.com/photo/2022/07/03/08/26/sunset-7298649_1280.jpg");
+  }
+  70% {
+    background-image: url("https://cdn.pixabay.com/photo/2017/06/25/12/27/sunset-2440669_1280.jpg");
+  }
+  80% {
+    background-image: url("https://cdn.pixabay.com/photo/2022/05/23/11/26/tree-7215935_960_720.jpg");
+  }
+  90% {
+    background-image: url("https://cdn.pixabay.com/photo/2019/07/14/17/07/trees-4337606_960_720.jpg");
+  }
+  100% {
+    background-image: url("https://cdn.pixabay.com/photo/2016/08/31/17/41/sunrise-1634197_960_720.jpg");
+  }
+}
