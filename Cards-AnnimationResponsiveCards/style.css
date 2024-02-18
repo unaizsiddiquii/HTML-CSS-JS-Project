@@ -1,0 +1,114 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  text-transform: capitalize;
+  transition: all 0.2s linear;
+}
+.container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  background-color: #74ebd5;
+  background-image: linear-gradient(90deg, rgb(112, 235, 213) 5%, #9face6 100%);
+}
+
+.box {
+  width: 300px;
+  height: 455px;
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 20px;
+  padding-top: 80px;
+  margin: 20px;
+  text-align: center;
+  letter-spacing: 1px;
+  line-height: 20px;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  position: relative;
+  z-index: 0;
+}
+.box h3 {
+  font-size: 35px;
+  padding: 20px 0;
+  color: #777;
+}
+.box p {
+  font-size: 15px;
+  color: #777;
+}
+.box button {
+  background-color: #333;
+  color: #fff;
+  font-size: 17px;
+  width: 140px;
+  border: none;
+  height: 40px;
+  text-align: center;
+  border-radius: 20px;
+  margin-top: 70px;
+  outline: none;
+  cursor: pointer;
+}
+.box button:hover {
+  letter-spacing: 1.6px;
+  opacity: 0.9;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.516);
+}
+.box::before {
+  width: 100%;
+  height: 100%;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+.box::after {
+  width: 100%;
+  height: 100%;
+  background-color: #fbda61;
+  background-image: linear-gradient(45deg, #fbda61 0%, #ff5acd 100%);
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -2;
+  clip-path: circle(20% at 90% 10%);
+  transition: all 0.4s ease-out;
+}
+.box .count {
+  position: absolute;
+  top: 45px;
+  right: 30px;
+  font-size: 50px;
+  font-weight: bolder;
+  color: #fff;
+}
+.box:nth-child(2):after {
+  background-color: #0093e9;
+  background-image: linear-gradient(160deg, #0093e9 0%, #80d0c7 100%);
+}
+.box:nth-child(3):after {
+  background-color: #0093e9;
+  background-image: linear-gradient(0deg, #08aeea 0%, #2af598 100%);
+}
+.box:hover::after {
+  clip-path: circle(100%);
+}
+.box:hover p {
+  color: #fff;
+}
+.box:hover h3 {
+  color: #fff;
+}
+
+.box:hover button {
+  color: #333;
+  background-color: #fff;
+}
