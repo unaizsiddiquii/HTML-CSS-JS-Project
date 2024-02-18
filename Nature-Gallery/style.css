@@ -25,6 +25,7 @@ body {
   background-image: url("https://cdn.pixabay.com/photo/2023/12/08/10/20/winter-8437400_960_720.jpg");
   background-size: cover;
   animation: gallery 20s linear infinite;
+  transition: all 1s ease-in-out;
 }
 @keyframes gallery {
   0% {
@@ -60,4 +61,8 @@ body {
   100% {
     background-image: url("https://cdn.pixabay.com/photo/2016/08/31/17/41/sunrise-1634197_960_720.jpg");
   }
+}
+.image-box:hover {
+  box-shadow: rgb(0, 0, 0) 0px 25px 60px -1px;
+  transform: scale(101%);
 }
